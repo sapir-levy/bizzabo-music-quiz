@@ -36,7 +36,7 @@ class Round extends Component {
   handleAnswerSubmit() {
     const {score, attempts} = this.props.roundInfo;
     const {answer} = this.state;
-    const {currentArtist , albums} = this.props;
+    const {currentArtist, albums} = this.props;
 
     if (answer.toLowerCase() === currentArtist.toLowerCase()) {
       this.handleRoundEnd(score)
@@ -53,7 +53,7 @@ class Round extends Component {
     this.setState({answer: ''});
   }
 
-  handleRoundEnd(score){
+  handleRoundEnd(score) {
     if (this.props.roundInfo.round == numberOfRounds)
       this.props.endGame(score);
     else {
@@ -62,7 +62,7 @@ class Round extends Component {
   }
 
   render() {
-    const {roundInfo, hint} = this.props;
+    const {roundInfo, hint, didGameEnded} = this.props;
     return (
       <div className="round-container">
         <div className="round-albums pull-left">
@@ -71,7 +71,7 @@ class Round extends Component {
         </div>
         <div className="round-answer pull-right">
           <h2 className="round-title">For {roundInfo.score} point(s)</h2>
-          <AnswerSection answer={this.state.answer}
+          <AnswerSection disableButton={didGameEnded} answer={this.state.answer}
                          onAnswerSubmit={this.handleAnswerSubmit.bind(this)}
                          onAnswerChange={this.handleAnswerChange.bind(this)}/>
           {hint.displayHint &&
@@ -86,7 +86,8 @@ function mapStateToProps(state) {
   return {
     albums: state.albums,
     roundInfo: state.roundInfo,
-    hint: state.hint
+    hint: state.hint,
+    didGameEnded: state.didGameEnded
   }
 }
 

@@ -10,7 +10,7 @@ const AnswerSection = (props) => {
       <h2 className="answer-title">Who's The Artist?</h2>
       <div>
         <FormControl className="answer-input" type="text" value={answer} placeholder="Your Answer..." onChange={onAnswerChange}/>
-        <Button bsSize="small" className="submit-btn" onClick={() => onAnswerSubmit()}><Glyphicon glyph="ok" /></Button>
+        <Button disabled={props.disableButton} bsSize="small" className="submit-btn" onClick={() => onAnswerSubmit()}><Glyphicon glyph="ok" /></Button>
       </div>
 
     </div>

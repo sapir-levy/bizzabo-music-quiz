@@ -1,23 +1,21 @@
-import {artists, numberOfRounds , numberOfAttempts} from '../constants/consts';
+import {artists, numberOfRounds } from '../constants/consts';
 
 export function getRandomArtists() {
-  // const gameArtists = [];
-  // for (let i = 0; i < numberOfRounds; i++) {
-  //   let artist = artists[Math.floor(Math.random() * artists.length)];
-  //
-  //   while (gameArtists.includes(artist)) {
-  //     artist = artists[Math.floor(Math.random() * artists.length)];
-  //   }
-  //
-  //   gameArtists.push(artist);
-  // }
+  const gameArtists = [];
+  for (let i = 0; i < numberOfRounds; i++) {
+    let artist = artists[Math.floor(Math.random() * artists.length)];
 
-  // return gameArtists;
-  return artists;
+    while (gameArtists.includes(artist)) {
+      artist = artists[Math.floor(Math.random() * artists.length)];
+    }
+
+    gameArtists.push(artist);
+  }
+
+  return gameArtists;
 }
 
 export function getJSONP(url, success) {
-
   var ud = '_' + +new Date,
     script = document.createElement('script'),
     head = document.getElementsByTagName('head')[0]

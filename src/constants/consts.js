@@ -3,22 +3,22 @@ export const artists = [
   'Bruno Mars',
   'Alicia Keys',
   'Coldplay',
-  'John Legend'
-  // 'U2',
-  // 'Radiohead',
-  // 'Sia',
-  // 'Justin Bieber',
-  // 'Pearl Jam',
-  // 'Kanya West',
-  // 'Jay-Z',
-  // 'Britney Spears',
-  // 'Adele',
-  // 'Lana Del Ray',
-  // 'Maroon 5',
-  // 'Justin Timberlake',
-  // 'Jenifer Lopez',
-  // 'Madonna',
-  // 'Bon Jovi'
+  'John Legend',
+  'U2',
+  'Radiohead',
+  'Sia',
+  'Justin Bieber',
+  'Pearl Jam',
+  'Kanya West',
+  'Jay-Z',
+  'Britney Spears',
+  'Adele',
+  'Lana Del Ray',
+  'Maroon 5',
+  'Justin Timberlake',
+  'Jenifer Lopez',
+  'Madonna',
+  'Bon Jovi'
 ];
 
 export const numberOfRounds = 5;
