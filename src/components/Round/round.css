@@ -1,0 +1,27 @@
+.round-title{
+  font-family: 'Boogaloo', cursive;
+  font-size: 50px;
+  color:darkorange;
+}
+
+.round-container{
+  border: 4px outset hotpink;
+  border-radius: 10px;
+  margin: 30px auto;
+  height:auto;
+  min-height:70%;
+  width:60%;
+  overflow:scroll
+}
+
+.round-albums{
+  margin: 15px 0 15px 40px;
+  height: 100%;
+  width: 35%;
+}
+
+.round-answer{
+  margin: 15px 40px 15px 0;
+  height: 100%;
+  width: 35%;
+}

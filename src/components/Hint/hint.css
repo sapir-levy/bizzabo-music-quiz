@@ -1,0 +1,10 @@
+.hint-container{
+  margin-top: 20px;
+}
+
+.hint-text{
+  font-family: 'Boogaloo', cursive;
+  font-size: 20px;
+  color:darkorange;
+  margin-right: 10px;
+}

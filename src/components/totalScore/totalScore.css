@@ -1,0 +1,9 @@
+.total-score-container{
+  text-align: center;
+}
+
+.total-score{
+  font-family: 'Boogaloo', cursive;
+  font-size: 50px;
+  color:darkorange;
+}

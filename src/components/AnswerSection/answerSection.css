@@ -1,0 +1,28 @@
+.answer-container{
+  margin-top: 20px;
+}
+
+.submit-btn{
+  background: #48bec5;
+  color: #fdf1e1;
+  border-color: #48bec5;
+  margin-left: 15px;
+}
+
+.submit-btn:hover , .submit-btn:active, .submit-btn:focus{
+  background: #67C5C5;
+  color: #fdf1e1;
+  border-color: #48bec5;
+}
+
+.answer-input{
+  display: inline-block;
+  width: 70%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.answer-title{
+  font-family: 'Boogaloo', cursive;
+  font-size: 30px;
+  color:darkorange;
+}

@@ -1,0 +1,13 @@
+.gameTitle{
+  font-family: 'Indie Flower', cursive;
+  font-size: 80px;
+  color: #fdf1e1;
+  text-align: center;
+  background-color: #48bec5;
+  margin-bottom: 45px;
+}
+
+.app-container{
+  height: 100%;
+  margin-top: 40px;
+}
